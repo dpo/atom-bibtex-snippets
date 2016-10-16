@@ -1,4 +1,4 @@
-'.bibtex.text':
+'.text.bibtex, .comment.block.bibtex':
 
   'Article':
     'prefix': 'article'
