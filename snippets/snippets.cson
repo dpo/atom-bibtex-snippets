@@ -1,0 +1,240 @@
+'.bibtex.text':
+
+  'Article':
+    'prefix': 'article'
+    'body': """
+      @Article{${1:author}-${2:year},
+        author = {$1},
+        title = {$3},
+        journal = {$4},
+        year = {$2},
+        OPTdoi = {},
+        OPTkey = {},
+        OPTvolume = {},
+        OPTnumber = {},
+        OPTpages = {},
+        OPTmonth = {},
+        OPTnote = {},
+        OPTannote = {}
+      }
+    """
+
+  'Book':
+    'prefix': 'book'
+    'body': """
+      @Book{${1:author}-${2:year},
+        ALTauthor = {$1},
+        ALTeditor = {},
+        title = {$3},
+        publisher = {$4},
+        year = {$2},
+        OPTkey = {},
+        OPTvolume = {},
+        OPTnumber = {},
+        OPTseries = {},
+        OPTaddress = {},
+        OPTedition = {},
+        OPTdoi = {},
+        OPTmonth = {},
+        OPTnote = {},
+        OPTannote = {}
+      }
+    """
+
+  'Booklet':
+    'prefix': 'booklet'
+    'body': """
+      @Booklet{${1:author}-${2:year},
+        title = {$3},
+        OPTkey = {},
+        OPTauthor = {$1},
+        OPThowpublished = {},
+        OPTaddress = {},
+        OPTdoi = {},
+        OPTmonth = {},
+        OPTyear = {$2},
+        OPTnote = {},
+        OPTannote = {}
+      }
+    """
+
+  'Incollection':
+    'prefix': 'incollection'
+    'body': """
+      @InCollection{${1:author}-${2:year},
+        author = {$1},
+        title = {$3},
+        booktitle = {$4},
+        OPTcrossref = {},
+        OPTkey = {},
+        OPTpages = {},
+        OPTpublisher = {},
+        OPTyear = {$2},
+        OPTeditor = {},
+        OPTvolume = {},
+        OPTnumber = {},
+        OPTseries = {},
+        OPTtype = {},
+        OPTchapter = {},
+        OPTaddress = {},
+        OPTedition = {},
+        OPTdoi = {},
+        OPTmonth = {},
+        OPTnote = {},
+        OPTannote = {}
+      }
+    """
+
+  'Inproceedings':
+    'prefix': 'inproceedings'
+    'body': """
+      @InProceedings{${1:author}-${2:year},
+        author = {$1},
+        title = {$3},
+        OPTcrossref = {},
+        OPTkey = {},
+        OPTbooktitle = {},
+        OPTpages = {},
+        OPTyear = {$2},
+        OPTeditor = {},
+        OPTvolume = {},
+        OPTnumber = {},
+        OPTseries = {},
+        OPTaddress = {},
+        OPTdoi = {},
+        OPTmonth = {},
+        OPTorganization = {},
+        OPTpublisher = {},
+        OPTnote = {},
+        OPTannote = {}
+      }
+    """
+
+  'Manual':
+    'prefix': 'manual'
+    'body': """
+      @Manual{${1:author}-${2:year},
+        title = {$1},
+        OPTkey = {},
+        OPTauthor = {},
+        OPTorganization = {},
+        OPTaddress = {},
+        OPTedition = {},
+        OPTmonth = {},
+        OPTyear = {$2},
+        OPTnote = {},
+        OPTannote = {}
+      }
+    """
+
+  'MastersThesis':
+    'prefix': 'mastersthesis'
+    'body': """
+      @MastersThesis{${1:author}-${2:year},
+        author = {$1},
+        title = {$3},
+        school = {$4},
+        year = {$2},
+        OPTkey = {},
+        OPTtype = {},
+        OPTaddress = {},
+        OPTdoi = {},
+        OPTmonth = {},
+        OPTnote = {},
+        OPTannote = {}
+      }
+    """
+
+  'Misc':
+    'prefix': 'misc'
+    'body': """
+      @Misc{${1:author}-${2:year},
+        OPTkey = {},
+        OPTauthor = {$1},
+        OPTtitle = {},
+        OPThowpublished = {},
+        OPTmonth = {},
+        OPTURL = {},
+        OPTyear = {$2},
+        OPTnote = {},
+        OPTannote = {}
+      }
+    """
+
+  'PhDThesis':
+    'prefix': 'phdthesis'
+    'body': """
+      @PhdThesis{${1:author}-${2:year},
+        author = {$1},
+        title = {$3},
+        school = {$4},
+        year = {$2},
+        OPTkey = {},
+        OPTtype = {},
+        OPTaddress = {},
+        OPTdoi = {},
+        OPTmonth = {},
+        OPTnote = {},
+        OPTannote = {}
+      }
+    """
+
+  'Unpublished':
+    'prefix': 'unpublished'
+    'body': """
+      @Unpublished{${1:author}-${2:year},
+        author = {$1},
+        title = {$3},
+        note = {$4},
+        OPTkey = {},
+        OPTmonth = {},
+        OPTyear = {$2},
+        OPTannote = {}
+      }
+    """
+
+  'Preamble':
+    'prefix': 'preamble'
+    'body': '@Preamble{{${1:message}}}'
+  'Proceedings':
+    'prefix': 'proceedings'
+    'body': """
+      @Proceedings{${1:editor}-${2:year},
+        title = {},
+        year = {$2},
+        OPTkey = {},
+        OPTbooktitle = {},
+        OPTeditor = {$1},
+        OPTvolume = {},
+        OPTnumber = {},
+        OPTseries = {},
+        OPTaddress = {},
+        OPTmonth = {},
+        OPTorganization = {},
+        OPTpublisher = {},
+        OPTdoi = {},
+        OPTnote = {},
+        OPTannote = {}
+      }
+    """
+
+  'String':
+    'prefix': 'string'
+    'body': '@String{${1:str} = {2:long string}}'
+  'TechReport':
+    'prefix': 'techreport'
+    'body': """
+      @TechReport{${1:author}-${2:year},
+        author = {$1},
+        title = {$3},
+        institution = {$4},
+        year = {$2},
+        OPTkey = {},
+        OPTtype = {},
+        OPTnumber = {},
+        OPTaddress = {},
+        OPTmonth = {},
+        OPTnote = {},
+        OPTannote = {}
+      }
+    """
